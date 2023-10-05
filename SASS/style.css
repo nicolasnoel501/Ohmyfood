@@ -34,6 +34,7 @@
   background-color: #F6F6F6;
   align-items: center;
   gap: 16px;
+  padding: 16px;
 }
 .header__main__title {
   text-align: center;
@@ -41,6 +42,23 @@
 .header__main__button {
   height: 50px;
   border: 1px;
-  border-radius: 20px;
+  border-radius: 25px;
   background-color: #9356DC;
-}/*# sourceMappingURL=index.css.map */
+  width: 218px;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 64px;
+}
+
+.main__operation {
+  margin-bottom: 8px;
+}
+.main__operation__title {
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+.main__operation__article {
+  display: flex;
+  flex-direction: row;
+}/*# sourceMappingURL=style.css.map */
