@@ -8,9 +8,50 @@
 }
 
 .header {
-    .header__logo {
+    &__logo {
         display: flex;
         justify-content: center;
         height: 36px;
+        margin: 16px;
+    }
+
+    &__map {
+        background-color: rgba(234, 234, 234, 1);
+        
+
+    }
+
+    &__map__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #F6F6F6;
+    }
+}
+
+.header__main {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+    align-items: center;
+    gap: 16px;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__button {
+        height: 50px;
+        border: 1px;
+        border-radius: 20px;
+        background-color: $primary;
     }
 }

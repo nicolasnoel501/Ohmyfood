@@ -5,8 +5,42 @@
   font-family: "roboto", sans-serif;
 }
 
-.header .header__logo {
+.header__logo {
   display: flex;
   justify-content: center;
   height: 36px;
+  margin: 16px;
+}
+.header__map {
+  background-color: rgb(234, 234, 234);
+}
+.header__map__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  gap: 20px;
+}
+.header__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #F6F6F6;
+}
+
+.header__main {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  align-items: center;
+  gap: 16px;
+}
+.header__main__title {
+  text-align: center;
+}
+.header__main__button {
+  height: 50px;
+  border: 1px;
+  border-radius: 20px;
+  background-color: #9356DC;
 }/*# sourceMappingURL=index.css.map */
