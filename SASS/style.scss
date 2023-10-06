@@ -7,6 +7,10 @@
     font-family: 'roboto', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .header {
     &__logo {
         display: flex;
@@ -58,6 +62,8 @@
         color: white;
         font-size: 16px;
         margin-bottom: 64px;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 
     }
 }
@@ -67,10 +73,129 @@
     &__title {
         margin-top: 16px;
         margin-left: 16px;
-    }   margin-bottom: 8px;
+       margin-bottom: 16px;
+    }
 }
 
 .main__operation__article {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    background: rgba(246, 246, 246, 1);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    height: 72px;
+    width: 322px;
+    margin-left: 25px;
+    margin-bottom: 16px;
+    padding: 0 32px 0 0;
+    
+    .main__operation__number {
+        border: solid 1px rgba(147, 86, 220, 1);
+        background-color: rgba(147, 86, 220, 1);
+        border-radius: 20px;
+        height: 24px;
+        color: white;
+        width: 24px;
+        padding-left: 5px;
+        margin-left: -10px;
+    }
 }
+
+.fa-mobile-screen-button, .fa-list-ul{
+    color: 
+    rgba(126, 126, 126, 1);
+}
+
+.fa-store {
+    color: $primary;
+}
+
+
+
+.main__section__card {
+    margin: 64px 0;
+    background: rgba(246, 246, 246, 1);
+
+    &__title {
+        padding: 32px 0 0 16px;
+    }
+
+    .card__food {
+    width: 340px;
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card__article {
+        display: flex;
+        flex-direction: column;
+    }
+
+        & img   {
+            width: 100%;
+            height: 231px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            
+        }
+}
+
+.main__section__card{
+
+    .card__content {
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card__txt {
+        color: black;
+        text-decoration: none;
+    }
+        &__title {
+            font-size: 18px;
+        }
+
+        .card__icon {
+            font-size: 24px;
+        }
+
+
+}
+
+.footer {
+    background:rgba(53, 53, 53, 1);
+
+    &__container {
+        padding: 20px;
+    }
+
+    &__title {
+        font-family: 'Shrikhand';
+        color: white;
+    }
+
+    &__navbar {
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        margin: 16px 0;
+        pointer-events: none;
+    }
+
+    i {
+        padding: 0 8px 0 0;
+    }
+}
+
+
