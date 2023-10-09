@@ -44,6 +44,7 @@ a {
   text-align: center;
 }
 .header__main__button {
+  cursor: pointer;
   height: 50px;
   border: 1px;
   border-radius: 25px;
@@ -54,6 +55,12 @@ a {
   margin-bottom: 64px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+.header__main__button:hover {
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  filter: brightness(1.1);
 }
 
 .main__operation__title {
@@ -95,19 +102,34 @@ a {
 }
 
 .main__section__card {
-  margin: 64px 0;
+  margin: 64px 0 0;
   background: rgb(246, 246, 246);
 }
 .main__section__card__title {
   padding: 32px 0 0 16px;
+  font-size: 18px;
 }
-.main__section__card .card__food {
+.main__section__card .food__card {
   width: 340px;
   margin: 20px;
   background-color: #fff;
   border: 1px solid #e0e0e0;
   border-radius: 15px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.main__section__card .card__image {
+  position: relative;
+}
+.main__section__card .badge__card {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgb(153, 226, 208);
+  color: rgb(0, 135, 102);
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-size: 14px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .main__section__card .card__article {
   display: flex;
@@ -118,8 +140,9 @@ a {
   height: 231px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-
 .main__section__card .card__content {
   padding: 16px;
   display: flex;
@@ -130,7 +153,7 @@ a {
   color: black;
   text-decoration: none;
 }
-.main__section__card__title {
+.main__section__card .card__title {
   font-size: 18px;
 }
 .main__section__card .card__icon {
@@ -160,4 +183,23 @@ a {
 }
 .footer i {
   padding: 0 8px 0 0;
+}
+
+@media (min-width: 768px) {
+  .main__operation__container {
+    display: flex;
+    margin: 0 25px;
+  }
+  .fa-mobile-screen-button, .fa-list-ul, .fa-store {
+    padding: 20px;
+  }
+  .card__food {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer__navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }/*# sourceMappingURL=style.css.map */
