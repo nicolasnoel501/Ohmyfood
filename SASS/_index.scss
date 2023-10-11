@@ -75,9 +75,9 @@ a {
     }
 }
 
-.main__operation {
+    .main__operation {
 
-    &__title {
+        &__title {
         margin-top: 16px;
         margin-left: 16px;
        margin-bottom: 16px;
@@ -125,6 +125,7 @@ a {
     margin: 64px 0 0;
     background: rgba(246, 246, 246, 1);
     width: 100%;
+    padding: 0 16px;
 
     &__title {
         font-size: 24px;
@@ -132,9 +133,8 @@ a {
     }
 
     .card__food {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+        display: grid;
+        gap: 16px;
     }
 
     .food__card {

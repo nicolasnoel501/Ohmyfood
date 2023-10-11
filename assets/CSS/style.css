@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -107,15 +108,15 @@ a {
   margin: 64px 0 0;
   background: rgb(246, 246, 246);
   width: 100%;
+  padding: 0 16px;
 }
 .main__section__card__title {
   font-size: 24px;
   margin-bottom: 16px;
 }
 .main__section__card .card__food {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: grid;
+  gap: 16px;
 }
 .main__section__card .food__card {
   width: 100%;
@@ -193,6 +194,54 @@ a {
   padding: 0 8px 0 0;
 }
 
+/* _loader.scss */
+@keyframes loaderAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: hideLoader 3s ease 0s 1 forwards; /* Animation pour masquer le loader après 3 secondes */
+}
+
+.loader__circle {
+  width: 50px;
+  height: 50px;
+  border: 4px solid transparent;
+  border-top-color: #9356DC; /* Couleur 1 */
+  border-radius: 50%;
+  animation: loaderAnimation 3s linear infinite;
+}
+
+.loader__circle:nth-child(2) {
+  animation-delay: 0.2s; /* Délai pour la deuxième couleur */
+  border-top-color: #FF79DA; /* Couleur 2 */
+}
+
+.loader__circle:nth-child(3) {
+  animation-delay: 0.3s; /* Délai pour la troisième couleur */
+  border-top-color: #99E2D0; /* Couleur 3 */
+}
+
+@keyframes hideLoader {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 @media (min-width: 768px) {
   .main__operation__container {
     display: flex;
@@ -205,9 +254,25 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .footer__container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .footer__title {
+    margin-left: 10px;
+  }
   .footer__navbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 16px;
+  }
+}
+@media (min-width: 1025px) {
+  .operation {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=style.css.map */

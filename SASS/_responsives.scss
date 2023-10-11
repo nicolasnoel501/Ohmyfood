@@ -13,9 +13,30 @@
         grid-template-columns: repeat(2,1fr);
     }
 
+    .footer__container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .footer__title {
+        margin-left: 10px;
+    }
+
     .footer__navbar {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        gap: 16px;
     }
 }
+
+
+@media (min-width:1025px) {
+    .operation {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+}
+    }
+
