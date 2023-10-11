@@ -42,6 +42,7 @@ a {
 }
 .header__main__title {
   text-align: center;
+  font-size: 24px;
 }
 .header__main__button {
   cursor: pointer;
@@ -67,6 +68,7 @@ a {
   margin-top: 16px;
   margin-left: 16px;
   margin-bottom: 16px;
+  font-size: 24px;
 }
 
 .main__operation__article {
@@ -104,14 +106,19 @@ a {
 .main__section__card {
   margin: 64px 0 0;
   background: rgb(246, 246, 246);
+  width: 100%;
 }
 .main__section__card__title {
-  padding: 32px 0 0 16px;
-  font-size: 18px;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.main__section__card .card__food {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .main__section__card .food__card {
-  width: 340px;
-  margin: 20px;
+  width: 100%;
   background-color: #fff;
   border: 1px solid #e0e0e0;
   border-radius: 15px;
@@ -162,6 +169,7 @@ a {
 
 .footer {
   background: rgb(53, 53, 53);
+  margin-top: 16px;
 }
 .footer__container {
   padding: 20px;
