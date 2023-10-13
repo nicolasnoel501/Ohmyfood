@@ -167,6 +167,16 @@ a {
 .main__section__card .card__icon {
   font-size: 24px;
 }
+.main__section__card .fa-heart {
+  transition: all 0.3s;
+}
+.main__section__card .fa-heart:hover {
+  font-weight: 900;
+  background: -webkit-linear-gradient(13deg, rgb(255, 121, 218) 0%, rgb(186, 98, 219) 66%);
+  color: transparent;
+  -webkit-background-clip: text;
+  cursor: pointer;
+}
 
 .footer {
   background: rgb(53, 53, 53);

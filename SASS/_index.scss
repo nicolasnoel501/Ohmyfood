@@ -198,5 +198,17 @@ a {
         font-size: 24px;
     }
 
+    .fa-heart{
+        transition: all 0.3s;
+    }
+
+    .fa-heart:hover{
+        font-weight: 900;
+        background:-webkit-linear-gradient(13deg, rgba(255,121,218,1) 0%, rgba(186,98,219,1) 66%);
+        color: transparent;
+        -webkit-background-clip: text;
+        cursor: pointer;
+    }
+
 
 }
