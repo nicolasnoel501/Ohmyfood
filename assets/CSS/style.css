@@ -10,6 +10,10 @@ a {
   text-decoration: none;
 }
 
+a:active {
+  color: black;
+}
+
 .header__logo {
   display: flex;
   justify-content: center;
