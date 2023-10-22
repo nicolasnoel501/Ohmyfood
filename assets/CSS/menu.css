@@ -141,23 +141,26 @@ a {
   bottom: 0;
 }
 .turntable__article:hover .turntable__icon {
-  width: 112px;
+  width: 59px;
   opacity: 1;
   background: rgb(153, 226, 208);
   transition: transform 0.5s ease-in-out, width 0.5s ease-in-out, opacity 0.5s ease-in-out, background 0.5s;
 }
 .turntable__article:hover .turntable__price {
-  transform: translateX(-112px);
+  transform: translateX(-55px);
   transition: transform 0.5s;
 }
 .turntable__article .fa-circle-check {
-  font-size: 48px;
+  font-size: 20px;
   color: white;
   transform: rotate(360deg);
   transition: 0.4s ease-in-out;
 }
 .turntable__article:hover .fa-circle-check {
   transform: rotate(0);
+}
+.turntable__article:hover .turntable__text p {
+  width: 80%;
 }
 
 .order {

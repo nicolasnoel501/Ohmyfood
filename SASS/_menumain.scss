@@ -163,21 +163,21 @@ a {
         bottom: 0;
     }
 
-    &:hover .turntable__icon {
-        width: 112px;
+    &:hover .turntable__icon {  
+        width: 59px;
         opacity: 1;
         background: rgba(153, 226, 208, 1);
         transition: transform 0.5s ease-in-out, width 0.5s ease-in-out, opacity 0.5s ease-in-out, background 0.5s;
     }
 
     &:hover .turntable__price {
-        transform: translateX(-112px);
+        transform: translateX(-55px);
         transition: transform 0.5s;
     }
 
 
     .fa-circle-check {
-        font-size: 48px;
+        font-size: 20px;
         color: white;
         transform: rotate(360deg);
         transition: 0.4s ease-in-out;
@@ -186,6 +186,15 @@ a {
     &:hover .fa-circle-check {
         transform: rotate(0);
     }
+
+    &:hover  .turntable__text {
+        
+
+        p {
+            width: 80%;
+        }
+    }
+
 }
 
 .order {
