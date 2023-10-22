@@ -58,6 +58,7 @@ a {
 }
 .main__title .fa-heart {
   transition: all 0.3s;
+  color: black;
 }
 .main__title .fa-heart:hover {
   font-weight: 900;
