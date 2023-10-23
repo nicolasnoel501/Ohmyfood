@@ -173,6 +173,7 @@ a:active {
 }
 .main__section__card .fa-heart {
   transition: all 0.3s;
+  color: black;
 }
 .main__section__card .fa-heart:hover {
   font-weight: 900;
@@ -288,5 +289,8 @@ a:active {
     flex-direction: column;
     align-content: center;
     flex-wrap: wrap;
+  }
+  .operation .main__section__card {
+    padding: 0 50px;
   }
 }/*# sourceMappingURL=style.css.map */
