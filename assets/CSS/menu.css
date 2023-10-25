@@ -8,6 +8,7 @@
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .header {
@@ -191,7 +192,6 @@ a {
 
 .footer {
   background: rgb(53, 53, 53);
-  margin-top: 16px;
 }
 .footer__container {
   padding: 20px;
@@ -209,7 +209,7 @@ a {
   text-decoration: none;
   color: white;
   margin: 16px 0;
-  pointer-events: none;
+  cursor: pointer;
 }
 .footer i {
   padding: 0 8px 0 0;

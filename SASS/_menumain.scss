@@ -9,6 +9,7 @@
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .header {
@@ -63,7 +64,7 @@ a {
 
         .fa-heart {
             transition: all 0.3s;
-            color: black;
+            color: black    ;
 
             &:hover {
                 font-weight: 900;

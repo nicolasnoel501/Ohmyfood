@@ -8,6 +8,7 @@
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:active {
@@ -112,7 +113,7 @@ a:active {
   margin: 64px 0 0;
   background: rgb(246, 246, 246);
   width: 100%;
-  padding: 0 16px;
+  padding: 0 16px 16px;
 }
 .main__section__card__title {
   font-size: 24px;
@@ -185,7 +186,6 @@ a:active {
 
 .footer {
   background: rgb(53, 53, 53);
-  margin-top: 16px;
 }
 .footer__container {
   padding: 20px;
@@ -203,7 +203,7 @@ a:active {
   text-decoration: none;
   color: white;
   margin: 16px 0;
-  pointer-events: none;
+  cursor: pointer;
 }
 .footer i {
   padding: 0 8px 0 0;
@@ -291,6 +291,6 @@ a:active {
     flex-wrap: wrap;
   }
   .main__section__card {
-    padding: 0 50px;
+    padding: 0 50px 20px;
   }
 }/*# sourceMappingURL=style.css.map */
