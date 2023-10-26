@@ -146,7 +146,6 @@ a {
   width: 59px;
   opacity: 1;
   background: rgb(153, 226, 208);
-  transition: transform 0.5s ease-in-out, width 0.5s ease-in-out, opacity 0.5s ease-in-out, background 0.5s;
 }
 .turntable__article:hover .turntable__price {
   transform: translateX(-55px);
