@@ -1,16 +1,24 @@
 @media (min-width:768px) {
-    .main__operation__container{
+
+    .main__operation .operation {
+        display: block;
+    }
+
+    .main__operation__container {
         display: flex;
         margin: 0 25px;
     }
-    
-    .fa-mobile-screen-button, .fa-list-ul, .fa-store{
+
+
+    .fa-mobile-screen-button,
+    .fa-list-ul,
+    .fa-store {
         padding: 20px;
     }
 
     .card__food {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .footer__container {
@@ -31,17 +39,15 @@
 }
 
 
-@media (min-width:1025px) {
-    .operation {
+@media (min-width:1024px) {
+
+    .main__operation__container {
         display: flex;
-        flex-direction: column;
-        align-content: center;
-        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .main__section__card{
+    .main__section__card {
         padding: 0 50px 20px;
     }
 
-    }
-
+}

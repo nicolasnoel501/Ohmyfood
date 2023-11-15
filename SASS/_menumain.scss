@@ -36,11 +36,12 @@ a {
 }
 
 .main {
-    margin-top: -40px;
+    margin: -40px auto 0 auto;
     border-radius: 35px 35px 0 0;
     background-color: #f6f6f6;
     position: relative;
     padding: 15px 5px 0 5px;
+    max-width: 1055px;
 
     .main__container {
         margin: 0 10px;
@@ -60,48 +61,71 @@ a {
 
         &__icon {
             font-size: 24px;
+            position: relative;
         }
 
-        .fa-heart {
-            transition: all 0.3s;
-            color: black    ;
 
-            &:hover {
-                font-weight: 900;
-                background: -webkit-linear-gradient(13deg, rgba(255, 121, 218, 1) 0%, rgba(186, 98, 219, 1) 66%);
-                color: transparent;
-                -webkit-background-clip: text;
-                cursor: pointer;
-            }
+
+        i {
+            position: absolute;
+            left: -16px;
         }
-    }
 
-    .title__section__card {
-        font-size: 16px;
-        border-bottom: 3px solid rgba(153, 226, 208, 1);
-        width: 40px;
-        margin-left: 8px;
+        .fa-solid {
+            opacity: 0;
+            transition-property: all;
+            transition-duration: .5s;
+        }
+
+        .fa-solid:hover {
+            opacity: 1;
+            color: transparent;
+            background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+
     }
 }
 
-.entries{
-    .turntable__article{
-        transition: 0.5s;
+.title__section__card {
+    font-size: 16px;
+    border-bottom: 3px solid rgba(153, 226, 208, 1);
+    width: 40px;
+    margin-left: 8px;
+}
+
+
+.entries {
+    .turntable__article {
+        opacity: 0;
         animation: slidedown1 1s;
+        animation-delay: .5s;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
     }
 }
 
 .turntable__section {
-    .turntable__article{
-        transition: 0.7s;
-        animation: slidedown2 2s;
+    .turntable__article {
+        opacity: 0;
+        animation: slidedown2 1s;
+        animation-delay: 1.5s;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
     }
 }
 
-.desserts{
-    .turntable__article{
-        transition: 0.9s;
-        animation: slidedown3 3s;
+.desserts {
+    .turntable__article {
+        opacity: 0;
+        animation: slidedown3 1s;
+        animation-delay: 2.5s;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
     }
 }
 
@@ -116,7 +140,7 @@ a {
     overflow: hidden;
     cursor: pointer;
     position: relative;
-    
+
 
 
     .turntable__text {
@@ -145,7 +169,7 @@ a {
         justify-content: flex-end;
         align-items: flex-end;
         padding-left: 8px;
-        transition: transform 0.3s;
+        transition: transform 0.7s;
     }
 
     .turntable__icon {
@@ -165,11 +189,11 @@ a {
         bottom: 0;
     }
 
-    &:hover .turntable__icon {  
+    &:hover .turntable__icon {
         width: 59px;
         opacity: 1;
         background: rgba(153, 226, 208, 1);
-        
+
     }
 
     &:hover .turntable__price {
@@ -189,8 +213,8 @@ a {
         transform: rotate(0);
     }
 
-    &:hover  .turntable__text {
-        
+    &:hover .turntable__text {
+
 
         p {
             width: 80%;
@@ -226,8 +250,3 @@ a {
         }
     }
 }
-
-
-
-
-
