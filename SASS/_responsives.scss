@@ -1,12 +1,13 @@
 @media (min-width:768px) {
-
     .main__operation .operation {
         display: block;
+        max-width: 1080px;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .main__operation__container {
-        display: flex;
-        margin: 0 25px;
+        grid-template-columns: repeat(2, 1fr);
     }
 
 
@@ -41,13 +42,34 @@
 
 @media (min-width:1024px) {
 
-    .main__operation__container {
+    .main__operation {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+    }
+
+    .main__operation__container {
+        // display: flex;
+        // justify-content: center;
     }
 
     .main__section__card {
-        padding: 0 50px 20px;
+        .card__food {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
+}
 
+@media (min-width:1200px) {
+    .main__operation {
+        .operation {
+            padding: 0;
+        }
+    }
+    .main__operation__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .main__section__card {
+        padding: 0;
+    }
 }

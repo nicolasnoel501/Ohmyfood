@@ -45,13 +45,14 @@ a {
 
     .main__container {
         margin: 0 10px;
-    }
+    
 
-    &__title {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        margin-bottom: 16px;
+        .main__title { 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
 
         &__text {
             font-family: 'Shrikhand';
@@ -59,17 +60,19 @@ a {
             font-weight: normal;
         }
 
-        &__icon {
-            font-size: 24px;
+        &__icons {
             position: relative;
+            font-size: 24px;
         }
 
-
-
-        i {
+        .main__title_icon {
             position: absolute;
-            left: -16px;
+            top: 0;
+            left: 0;
+            width: 24px;
+            aspect-ratio: 1/1;
         }
+
 
         .fa-solid {
             opacity: 0;
@@ -83,9 +86,10 @@ a {
             background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
             background-clip: text;
             -webkit-background-clip: text;
+            cursor: pointer;
         }
-
     }
+    
 }
 
 .title__section__card {
