@@ -58,20 +58,22 @@ a {
 .main .main__container__icons {
   position: relative;
   font-size: 24px;
+  width: 24px;
+  height: 24px;
 }
-.main .main__container .main__title_icon {
+.main .main__container .main__title__icon {
   position: absolute;
   top: 0;
   left: 0;
   width: 24px;
   aspect-ratio: 1/1;
 }
-.main .main__container .fa-solid {
+.main .main__container .heart__hover {
   opacity: 0;
   transition-property: all;
   transition-duration: 0.5s;
 }
-.main .main__container .fa-solid:hover {
+.main .main__container .heart__hover:hover {
   opacity: 1;
   color: transparent;
   background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);

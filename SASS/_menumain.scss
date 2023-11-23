@@ -63,9 +63,11 @@ a {
         &__icons {
             position: relative;
             font-size: 24px;
+            width: 24px;
+            height: 24px;
         }
 
-        .main__title_icon {
+        .main__title__icon {
             position: absolute;
             top: 0;
             left: 0;
@@ -74,13 +76,13 @@ a {
         }
 
 
-        .fa-solid {
+        .heart__hover {
             opacity: 0;
             transition-property: all;
             transition-duration: .5s;
         }
 
-        .fa-solid:hover {
+        .heart__hover:hover {
             opacity: 1;
             color: transparent;
             background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
