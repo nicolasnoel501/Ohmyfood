@@ -9,6 +9,7 @@
 a {
   text-decoration: none;
   cursor: pointer;
+  color: black;
 }
 
 a:active {
@@ -18,7 +19,7 @@ a:active {
 .header__logo {
   display: flex;
   justify-content: center;
-  height: 36px;
+  height: 30px;
   margin: 16px;
 }
 .header__map {
@@ -43,7 +44,7 @@ a:active {
 
 .header__main__title {
   text-align: center;
-  font-size: 40px;
+  font-size: 24px;
 }
 .header__main__paragraph {
   font-size: 18px;
@@ -98,7 +99,7 @@ a:active {
   height: 72px;
   margin-bottom: 16px;
   padding: 0 32px 0 0;
-  width: 100%;
+  width: 322px;
 }
 .main__operation__article .main__operation__number {
   border: solid 1px rgb(147, 86, 220);
@@ -107,16 +108,17 @@ a:active {
   height: 24px;
   color: white;
   width: 24px;
-  padding-left: 5px;
   margin-left: -10px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.fa-mobile-screen-button,
-.fa-list-ul {
+.main__operation__article .fa-mobile-screen-button,
+.main__operation__article .fa-list-ul {
   color: rgb(126, 126, 126);
 }
-
-.fa-store {
+.main__operation__article .fa-store {
   color: #9356DC;
 }
 
@@ -124,7 +126,7 @@ a:active {
   margin: 64px 0 0;
   background: rgb(246, 246, 246);
   width: 100%;
-  padding: 0 40px 16px;
+  padding: 0 18px 0 17px;
 }
 .main__section__card__container {
   width: 100%;
@@ -137,7 +139,6 @@ a:active {
 }
 .main__section__card__title {
   font-size: 24px;
-  margin-bottom: 28px;
 }
 .main__section__card .card__food {
   display: grid;
@@ -181,14 +182,17 @@ a:active {
   padding: 16px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
 }
 .main__section__card .card__txt {
   color: black;
   text-decoration: none;
 }
-.main__section__card .card__title {
+.main__section__card .card__txt__title {
   font-size: 18px;
+}
+.main__section__card p {
+  font-size: 17px;
 }
 .main__section__card .card__icon {
   font-size: 24px;
@@ -215,7 +219,7 @@ a:active {
   background: rgb(53, 53, 53);
 }
 .footer__container {
-  padding: 20px;
+  padding: 22px 25px 22px 25px;
 }
 .footer__title {
   font-family: "Shrikhand";
@@ -229,7 +233,7 @@ a:active {
 .footer a {
   text-decoration: none;
   color: white;
-  margin: 16px 0;
+  margin: 7px 0;
   cursor: pointer;
 }
 .footer i {

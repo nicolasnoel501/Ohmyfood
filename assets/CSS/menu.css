@@ -49,8 +49,9 @@ a {
   align-items: center;
   justify-content: center;
   gap: 30px;
+  font-family: "Shrikhand";
 }
-.main .main__container__text {
+.main .main__container .main__title__text {
   font-family: "Shrikhand";
   font-size: 28px;
   font-weight: normal;
@@ -86,7 +87,8 @@ a {
   font-size: 16px;
   border-bottom: 3px solid rgb(153, 226, 208);
   width: 40px;
-  margin-left: 8px;
+  margin-top: 40px;
+  font-weight: 300;
 }
 
 .entries .turntable__article {
@@ -120,7 +122,7 @@ a {
   background-color: #fff;
   padding: 16px;
   display: flex;
-  border-radius: 12px;
+  border-radius: 15px;
   margin: 16px 0;
   box-shadow: 0px 4.0115px 15.0431px 0px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -137,6 +139,7 @@ a {
   font-size: 18px;
   white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 .turntable__article .turntable__text p {
   font-size: 15px;
@@ -186,7 +189,7 @@ a {
 .turntable__article:hover .fa-circle-check {
   transform: rotate(0);
 }
-.turntable__article:hover .turntable__text p {
+.turntable__article:hover .turntable__text p, .turntable__article:hover .turntable__text h3 {
   width: 80%;
 }
 
@@ -219,7 +222,7 @@ a {
   background: rgb(53, 53, 53);
 }
 .footer__container {
-  padding: 20px;
+  padding: 22px 25px 22px 25px;
 }
 .footer__title {
   font-family: "Shrikhand";
@@ -233,7 +236,7 @@ a {
 .footer a {
   text-decoration: none;
   color: white;
-  margin: 16px 0;
+  margin: 7px 0;
   cursor: pointer;
 }
 .footer i {
